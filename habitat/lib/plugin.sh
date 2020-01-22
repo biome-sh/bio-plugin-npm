@@ -8,6 +8,8 @@
 #
 # Functions
 # `do_npm_setup_cache` - caches npm repository into studio cache
+# `do_npm_link_env` - creates /usr/bin/env
+# `do_npm_unlink_env` - removes /usr/bin/env if we're created it
 
 do_npm_setup_cache() {
     mkdir -p                           "/hab/cache/artifacts/studio_cache/npm"
